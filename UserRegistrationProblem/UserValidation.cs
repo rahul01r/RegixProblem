@@ -16,5 +16,15 @@ namespace UserRegistrationProblem
             bool result = regex.IsMatch(firstname);
             Console.WriteLine(result);
         }
+        //UC2
+        //LastName the First Letter Should Capital and minimum 3 Character
+        public const string LASTNAME_REGEX = "^[A-Z][a-zA-Z]{2}$";
+        public void ValidationLastName(string lastname)
+        {
+            Regex regex = new Regex(LASTNAME_REGEX);
+            bool result = regex.IsMatch(lastname);
+            Console.WriteLine(result);
+        }
     }
 }
+
